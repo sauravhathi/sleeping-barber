@@ -2,7 +2,7 @@
 
 ## DEMO
 
-[Barber Shop Problem](https://barber-shop-problem.vercel.app/)
+### https://sauravhathi.github.io/sleeping-barber/
 
 ## Screenshot
 
