@@ -34,3 +34,5 @@ This is a solution to the barber shop problem using a queue data structure. The 
 
 - Enter the number of customers. e.g. 1 2 3 4 5 6 7 8 9 10
 - Enter the number of chairs. e.g. 7
+
+**Note:** Purpose of this project only visualizing the process. I didn't use any data structure or algorithm except `FifoQueue`. I just used the basic javascript and html. I will try to implement the data structure and algorithm in the future. If you have any suggestion or question please comment below. Thank you for reading.
