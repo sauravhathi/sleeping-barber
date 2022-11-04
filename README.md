@@ -15,6 +15,9 @@
 #### Simulation Output
 ![image](https://user-images.githubusercontent.com/61316762/200036408-0a0d7d74-306d-4108-a74f-f8dd69b6dd11.png)
 
+#### When No Customer
+![image](https://user-images.githubusercontent.com/61316762/200036767-35f7f4d4-7252-4202-a417-ed72d152bf3f.png)
+
 ## Description
 
 This is a solution to the barber shop problem using a queue data structure. The barber shop problem is a classic synchronization problem. The problem is that there is a barber shop with a waiting room and a barber chair. There are n chairs in the waiting room. If there are no customers to be served, the barber goes to sleep. If a customer enters the barber shop and all chairs are occupied, then the customer leaves the shop. If the barber is busy, but chairs are available, then the customer sits in one of the free chairs. If the barber is asleep, the customer wakes up the barber.
