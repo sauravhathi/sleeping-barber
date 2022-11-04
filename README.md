@@ -6,7 +6,14 @@
 
 ## Screenshot
 
+#### HomePage
+![image](https://user-images.githubusercontent.com/61316762/200036042-21fcc361-d3a8-489c-bf00-4a974067bbd8.png)
 
+#### Input
+![image](https://user-images.githubusercontent.com/61316762/200036321-5f83387c-ddaf-45dd-a611-d7603274781f.png)
+
+#### Simulation Output
+![image](https://user-images.githubusercontent.com/61316762/200036408-0a0d7d74-306d-4108-a74f-f8dd69b6dd11.png)
 
 ## Description
 
