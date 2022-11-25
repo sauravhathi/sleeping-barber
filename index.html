@@ -197,6 +197,7 @@
     </footer>
 
     <script>
+      // fifo queue implementation using array
       class FifoQueue {
         constructor() {
           this.queue = [];
@@ -210,19 +211,17 @@
           return this.queue.shift();
         }
 
-        isEmpty() {
-          return this.queue.length === 0;
-        }
-
         size() {
           return this.queue.length;
         }
       }
 
+      // sleep function to make the code wait for some time before executing next line of code
       function sleep(ms) {
         return new Promise((resolve) => setTimeout(resolve, ms));
       }
 
+      // responsive navbar
       function toggleMenu() {
         var menu = document.getElementById("menu");
         var github = document.getElementById("github");
@@ -238,6 +237,7 @@
         }
       }
 
+      // getting the input from the user
       function getValues() {
         let customers = document.getElementById("customerCount").value;
         let chair = document.getElementById("chairCount").value;
@@ -269,6 +269,7 @@
         return [customers, chairs];
       }
 
+      // clear function
       function clr() {
         document.getElementById("leaveWaitingRoom").innerHTML = "";
         document.getElementById("waitingRoom").innerHTML = "";
@@ -283,13 +284,18 @@
         window.location.href = "https://github.com/sauravhathi";
       }
 
+      // start function to start the simulation and show the output
       function start() {
         clr();
+        // getValues function to get the input from the user
         const [customers, chairs] = getValues();
 
         let waitting = 0;
 
+        // object of FifoQueue class
         const queue = new FifoQueue();
+
+        // dom elements to show the output 
         let leaveWaitingRoom = document.getElementById("leaveWaitingRoom");
         let waitingRoom = document.getElementById("waitingRoom");
         let cuttingRoom = document.getElementById("cuttingRoom");
@@ -299,7 +305,9 @@
 
         let miliseconds = 3000;
 
+        // using async function to make the code wait for some time before executing next line of code
         setTimeout(async () => {
+          // loop to add the customers to the queue
           for (let i = 0; i < customers.length; i++) {
             if (waitting < chairs.length) {
               queue.enqueue(customers[i]);
@@ -329,6 +337,7 @@
           }
         }, 2000);
 
+        // using async function to make the code wait for some time before executing next line of code
         setTimeout(async () => {
           if (waitting > 0) {
             for (let i = 0; i < waitting; i++) {
